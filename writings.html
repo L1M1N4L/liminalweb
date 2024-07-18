@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="c-magic-area c-magic-area--menu" data-target-class=".c-main-menu__link" data-tween-back="true" aria-hidden="true"></div>
+    <div class="c-magic-area c-magic-area--content" data-target-class=".c-article__link" data-tween-back="false" aria-hidden="true"></div>
+
+    <main id="page" class="o-page">
+        <div class="loader-overlay" id="loaderOverlay">
+            <div class="loader" id="loader"></div>
+          </div>
+    <header class="o-header">
+        <h1 class="c-logo"><a class="c-logo__link" target="_blank">L1M1N4L</a></h1>
+        <nav class="c-main-menu" aria-labelledby="mainmenulabel">
+        <h2 id="mainmenulabel" class="u-visually-hidden">Main Menu</h2>
+        <ul class="c-main-menu__list">
+            <li><a class="c-main-menu__link" href="index.html">Home</a></li>
+            <li><a class="c-main-menu__link" href="portfolio.html">Portfolio</a></li>
+            <li><a aria-current="page" class="is-magic-active c-main-menu__link" href="#">Writings</a></li>
+            <li><a class="c-main-menu__link" href="contact.html">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+
+    <section class="o-main-section">
+        <h2 class="c-main-heading">Writings</h2>
+
+        <article class="c-article">
+        <a class="c-article__link" href="#">
+            <div>
+            <header>
+                <h3 class="c-article__heading">A Guide to Learning Japanese</h3>
+                <time datetime="2022-01-01">May 10, 2024</time>
+            </header>
+            <div class="c-article__content">
+                This Guide offers a structured approach for mastering the language, covering exam prep, university-level proficiency, and fluent conversation.
+            </div>
+            </div>
+            <div class="c-article__img-wrapper">
+            <img class="c-article__img" src="https://assets.codepen.io/204808/shin-yun-bok-ink.png" alt="Ink transition with PNG sprite" />
+            </div>
+        </a>
+        </article>
+
+        <article class="c-article">
+        <a class="c-article__link" href="#">
+            <div>
+            <header>
+                <h3 class="c-article__heading">Design and Implementation of Language Learning Features in Visual Novels</h3>
+                <time datetime="2022-01-01">July 5, 2024</time>
+            </header>
+            <div class="c-article__content">
+                Analysing how language learning features are integrated into visual novels to enhance language acquisition through interactive storytelling strategies.
+            </div>
+            </div>
+            <div class="c-article__img-wrapper">
+            <img class="c-article__img" src="Screenshot 2024-07-16 121918.jpeg" alt="Responsive Mondrian art with CSS grid" />
+            </div>
+        </a>
+        </article>
+
+        <article class="c-article">
+        <a class="c-article__link" href="#">
+            <div>
+            <header>
+                <h3 class="c-article__heading">Machine Learning in IoT</h3>
+                <time datetime="2022-01-01">July 20, 2024</time>
+            </header>
+            <div class="c-article__content">
+                Analyzing Machine Learning Integration in IoT Applications with Arduino for Enhanced Connectivity and Data Analytics.
+            </div>
+            </div>
+            <div class="c-article__img-wrapper">
+            <img class="c-article__img" src="Default_An_animestyle_cityscape_at_dusk_filled_with_traditiona_0.jpg" alt="Responsive Mondrian art with CSS grid" />
+            </div>
+        </a>
+        </article>
+    </section>
+    </main>
+
+
+ <!-- GSAP CDN -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+ <!-- Lodash CDN -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+ <!-- VanillaTilt CDN -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"></script>
+ <!-- Your custom script -->
+ <script src="script.js" defer></script>
+ <script>
+ document.addEventListener('DOMContentLoaded', function() {
+    var loaderOverlay = document.getElementById('loaderOverlay');
+    var content = document.getElementById('content');
+  
+    // Show loader overlay
+    loaderOverlay.style.display = 'flex';
+  
+    // Simulate content loading delay
+    setTimeout(function() {
+      // Hide loader overlay
+      loaderOverlay.style.display = 'none';
+  
+      // Show content
+      content.style.display = 'block';
+    }, 2300); // Simulate 3 seconds loading time
+  });
+  
+  
+      </script>
+</body>
+</html>
